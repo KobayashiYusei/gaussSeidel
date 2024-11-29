@@ -33,7 +33,7 @@ $ ./numberguesser
     - [os](https://github.com/python/cpython/blob/main/Lib/os.py)
     - [pathlib](https://github.com/python/cpython/tree/3.13/Lib/pathlib/)
 
-## コントリビューション
+## 貢献
 このプロジェクトへのコントリビューションは大歓迎です 。 
 バグ報告や新機能の提案など、どんな形でも構いません。
 　
