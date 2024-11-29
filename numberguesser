@@ -1,0 +1,41 @@
+#!/usr/bin/python3
+import random
+import colorsys
+def rainbow(text):
+    steps = len(text)
+    prompt = ""
+    for i, char in enumerate(text):
+        hue = i / steps 
+        rgb = tuple(int(c * 255) for c in colorsys.hsv_to_rgb(hue, 1, 1)) 
+        color_code = f"\033[38;2;{rgb[0]};{rgb[1]};{rgb[2]}m" 
+        prompt += f"{color_code}{char}"
+    prompt += "\033[0m "
+    return prompt
+def number_guesser():
+    print("N   N U   U M   M BBBB  EEEE RRRR    GGG  U   U EEEE  SSS   SSS  EEEE RRRR\nNN  N U   U MM MM B   B E    R   R  G     U   U E    S     S     E    R   R\nN N N U   U M M M BBBB  EEE  RRRR   G  GG U   U EEE   SSS   SSS  EEE  RRRR\nN  NN U   U M   M B   B E    R R    G   G U   U E        S     S E    R R\nN   N  UUU  M   M BBBB  EEEE R  RR   GGG   UUU  EEEE SSSS  SSSS  EEEE R  RR")
+    print("guess the secret number(1~100)")
+    
+    secret_number = random.randint(1, 100)
+    charrenge = 0  
+    
+    while True:
+        # ユーザー入力を受け取る
+        guess = input("guess: ")
+        
+        # 入力が整数か確認
+        if not guess.isdigit():
+            print("input number")
+            continue
+        guess = int(guess)
+        charrenge += 1  
+        
+        if guess < secret_number:
+            print("it is a bigger number than that.")
+        elif guess > secret_number:
+            print("it is a smaller number than that")
+        else:
+            print(f"{rainbow("congraturations!")}🎉\nsecret number was {secret_number} ！")
+            print(f"score: {charrenge}turn")
+            break
+
+number_guesser()
