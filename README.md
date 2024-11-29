@@ -11,7 +11,7 @@
 インストール
 -----------------------
 ```bash
-git clone  https://github.com/KobayashiYusei/numberGuesser.git
+git clone https://github.com/KobayashiYusei/numberGuesser.git
 cd numberGuesser
 chmod 755 numberguesser
 ```
@@ -27,6 +27,11 @@ chmod 755 numberguesser
     - [colorsys](https://github.com/python/cpython/blob/main/Lib/colorsys.py)
     - [os](https://github.com/python/cpython/blob/main/Lib/os.py)
     - [pathlib](https://github.com/python/cpython/tree/3.13/Lib/pathlib/)
+
+ライセンス
+---------------------
+- このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
+- © 2024 Yusei Kobayashi
 ```
 code
 ```
