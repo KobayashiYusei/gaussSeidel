@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 import random
 import colorsys
+import os
+from pathlib import Path
 def rainbow(text):
     steps = len(text)
     rainbow_text = ""
@@ -12,6 +14,9 @@ def rainbow(text):
     rainbow_text += "\033[0m "
     return rainbow_text
 def number_guesser():
+    file_path = Path("score.txt")
+    if not file_path.exists():
+        file_path.touch()
     print("█   █ █   █ █   █ ████  ████ ████    ███  █   █ ████  ███   ███  ████ ████")
     print("██  █ █   █ ██ ██ █   █ █    █   █  █     █   █ █    █     █     █    █   █")
     print("█ █ █ █   █ █ █ █ ████  ███  ████   █  ██ █   █ ███   ███   ███  ███  ████")
@@ -37,11 +42,10 @@ def number_guesser():
             print("it is a smaller number than that")
         else:
             print(f"{rainbow("congraturations!")}🎉\nsecret number was {secret_number} !")
-            with open("score.txt", "r", encoding="utf-8") as file:
-                if(charrenge < int(file.read()) ):
+            with open("score.txt", "r+", encoding="utf-8") as file:
+                if((os.path.getsize('score.txt') > 0 and charrenge < int(file.read())) or  os.path.getsize('score.txt') == 0):
                     print(f"{rainbow("HIGHSCORE!")}")
-                    with open("score.txt", "w", encoding="utf-8") as file:
-                        file.write(f"{charrenge}")
+                    file.write(f"{charrenge}")
             print(f"score: {charrenge}turn")
             break
         if(5<abs(secret_number - guess) and abs(secret_number - guess)< 20):
