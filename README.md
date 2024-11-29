@@ -19,47 +19,9 @@ chmod 755 numberguesser
 使い方
 ```
 $ ./numberguesser
-█   █ █   █ █   █ ████  ████ ████    ███  █   █ ████  ███   ███  ████ ████
-██  █ █   █ ██ ██ █   █ █    █   █  █     █   █ █    █     █     █    █   █
-█ █ █ █   █ █ █ █ ████  ███  ████   █  ██ █   █ ███   ███   ███  ███  ████
-█  ██ █   █ █   █ █   █ █    █ █    █   █ █   █ █        █     █ █    █ █
-█   █  ███  █   █ ████  ████ █  ██   ███   ███  ████ ████  ████  ████ █  ██
-guess the secret number(1~1000)
-guess: 400
-it is a bigger number than that.
-guess: 800
-it is a smaller number than that
-guess: 500
-it is a bigger number than that.
-guess: 600
-it is a bigger number than that.
-guess: 700
-it is a bigger number than that.
-Close!
-guess: 710
-it is a bigger number than that.
-Very Close!
-guess: 715
-it is a smaller number than that
-Very Close!
-guess: 711
-it is a bigger number than that.
-Very Close!
-guess: 713
-it is a bigger number than that.
-Very Close!
-guess: 712
-it is a bigger number than that.
-Very Close!
-guess: 716
-it is a smaller number than that
-Very Close!
-guess: 714
-congraturations! 🎉
-secret number was 714 !
-HIGHSCORE!
-score: 12turn
 ```
+![image](https://github.com/user-attachments/assets/76d676b7-8ce1-4cdf-8bed-5f282d538db8)
+
 使用ライブラリ
 -----------------------
 - **Python標準ライブラリ**
