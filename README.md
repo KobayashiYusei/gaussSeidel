@@ -25,13 +25,18 @@ $ ./numberguesser
 
 ![image](https://github.com/user-attachments/assets/76d676b7-8ce1-4cdf-8bed-5f282d538db8)
 
-## 使用ライブラリ
+## クレジット
+### 使用ライブラリ
 - **Python標準ライブラリ**
     - [random](https://github.com/python/cpython/blob/3.9/Lib/random.py) 
     - [colorsys](https://github.com/python/cpython/blob/main/Lib/colorsys.py)
     - [os](https://github.com/python/cpython/blob/main/Lib/os.py)
     - [pathlib](https://github.com/python/cpython/tree/3.13/Lib/pathlib/)
 
+## コントリビューション
+このプロジェクトへのコントリビューションは大歓迎です 。 
+バグ報告や新機能の提案など、どんな形でも構いません。
+　
 ## ライセンス
 - このソフトウェアパッケージは，[3条項BSDライセンス](LICENSE)の下，再頒布および使用が許可されます．
 - © 2024 Yusei Kobayashi
@@ -41,6 +46,7 @@ $ ./numberguesser
 - ソースコードの再配布時は、著作権表示、条件リスト、および免責事項を含める必要があります。
 - バイナリ形式での再配布時は、同様の情報を付属ドキュメントに記載する必要があります。
 - 著作権者や貢献者の名前を無断でプロモーションに使用してはなりません。
+
 ```
 code
 ```
