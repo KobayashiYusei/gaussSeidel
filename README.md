@@ -44,7 +44,7 @@ $ ./numberguesser
 このプロジェクトへの貢献は大歓迎です 。 
 バグ報告や新機能の提案など、どんな形でも構いません。
 ### 貢献方法
-1. このリポジトリをフォークする。![GitHub forks](https://img.shields.io/github/forks/KobayashiYusei/numberGuesser)(ページ右上のForkからどうぞ)
+1. このリポジトリをフォークする。(ページ右上のForkからどうぞ)
 2. 新しいブランチを作成する。
 3. コードをコミットする。
 4. プッシュする。
