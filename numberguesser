@@ -44,10 +44,12 @@ def number_guesser():
         elif guess > secret_number:
             print("it is a smaller number than that")
         else:
-            print(f"{rainbow("congraturations!")}🎉\nsecret number was {secret_number} !")
+            rainbowword = rainbow("congraturations!")
+            print(f"{rainbowword}🎉\nsecret number was {secret_number} !")
             with open("score.txt", "r", encoding="utf-8") as file:
                 if((os.path.getsize('score.txt') > 0 and charrenge < int(file.read())) or  os.path.getsize('score.txt') == 0):
-                    print(f"{rainbow("HIGHSCORE!")}")
+                    rainbowword = rainbow("HIGHSCORE!")
+                    print(f"{rainbowword}")
                     with open("score.txt", "w", encoding="utf-8") as file:
                         file.write(f"{charrenge}")
             print(f"score: {charrenge}turn")
