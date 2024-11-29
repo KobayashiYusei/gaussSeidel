@@ -45,10 +45,11 @@ def number_guesser():
             print("it is a smaller number than that")
         else:
             print(f"{rainbow("congraturations!")}🎉\nsecret number was {secret_number} !")
-            with open("score.txt", "r+", encoding="utf-8") as file:
+            with open("score.txt", "r", encoding="utf-8") as file:
                 if((os.path.getsize('score.txt') > 0 and charrenge < int(file.read())) or  os.path.getsize('score.txt') == 0):
                     print(f"{rainbow("HIGHSCORE!")}")
-                    file.write(f"{charrenge}")
+                    with open("score.txt", "w", encoding="utf-8") as file:
+                        file.write(f"{charrenge}")
             print(f"score: {charrenge}turn")
             break
         if(5<abs(secret_number - guess) and abs(secret_number - guess)< 20):
@@ -56,4 +57,7 @@ def number_guesser():
         elif(abs(secret_number - guess) <=5):
             print("\033[38;2;80;255;255mVery Close!\033[0m ")
 
-number_guesser()
+try:
+    number_guesser()
+except EOFError:
+    pass 
