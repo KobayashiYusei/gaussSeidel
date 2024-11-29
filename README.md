@@ -21,6 +21,8 @@ $ ./numberguesser
 - 数字の値が正解に近いと二段階の近さ度合いによって追加のアクションがあります。
 - 正解すると数字が明らかになりハイスコアか否かが表示されます。
 
+### 実行例
+
 ![image](https://github.com/user-attachments/assets/76d676b7-8ce1-4cdf-8bed-5f282d538db8)
 
 ## 使用ライブラリ
