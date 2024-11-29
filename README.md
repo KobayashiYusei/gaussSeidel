@@ -7,6 +7,7 @@
 - Ubuntu 24.04.1 LTS
 
 ## インストール
+コマンドラインで以下を実行します。
 ```bash
 git clone https://github.com/KobayashiYusei/numberGuesser.git
 cd numberGuesser
@@ -14,6 +15,7 @@ chmod 755 numberguesser
 ```
 
 ## 使い方
+以下を実行してゲームを起動します
 ```
 $ ./numberguesser
 ```
@@ -25,6 +27,7 @@ $ ./numberguesser
 
 ![image](https://github.com/user-attachments/assets/76d676b7-8ce1-4cdf-8bed-5f282d538db8)
 
+ハイスコアはテキストファイルが生成され、保存されるため、次回のプレイにおいてもハイスコアは維持されます。
 ## クレジット
 ### 使用ライブラリ
 - **Python標準ライブラリ**
