@@ -1,4 +1,5 @@
 # numberGuesser
+[![test](https://github.com/KobayashiYusei/numberGuesser/actions/workflows/test.yml/badge.svg)](https://github.com/KobayashiYusei/numberGuesser/actions/workflows/test.yml)
 ## 概要
 - 追加のライブラリインストールが不要で遊べる数字当てゲームです。
 - ハイスコア表示機能や答えの数との差に応じたアクションを搭載し、Linuxの文字色変更用のエスケープシーケンスを使用してゲームに装飾を施しました。
@@ -43,7 +44,7 @@ $ ./numberguesser
 このプロジェクトへの貢献は大歓迎です 。 
 バグ報告や新機能の提案など、どんな形でも構いません。
 ### 貢献方法
-1. このリポジトリをフォークする。[![fork](https://camo.githubusercontent.com/d9fce1c19fadb9189ab606df2e15f5c38f5e09969651511a09033d9a58bda4a6/68747470733a2f2f637573746f6d2d69636f6e2d6261646765732e6865726f6b756170702e636f6d2f62616467652f466f726b2d6f72616e67652e7376673f6c6f676f3d666f726b)]()
+1. このリポジトリをフォークする。[![fork]()]()
 (ページ右上のForkからどうぞ)
 2. 新しいブランチを作成する。
 3. コードをコミットする。
