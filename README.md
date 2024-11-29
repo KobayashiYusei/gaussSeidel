@@ -34,8 +34,14 @@ $ ./numberguesser
     - [pathlib](https://github.com/python/cpython/tree/3.13/Lib/pathlib/)
 
 ## 貢献
-このプロジェクトへのコントリビューションは大歓迎です 。 
+このプロジェクトへの貢献は大歓迎です 。 
 バグ報告や新機能の提案など、どんな形でも構いません。
+### 貢献方法
+1.フォークする。
+2.新しいブランチを作成する。(git checkout -b feature/YourFeature)
+3.コードをコミットする。(git commit -m 'Add some feature')
+4.プッシュする。(git push origin feature/YourFeature)
+5.プルリクエストを作成する。
 　
 ## ライセンス
 - このソフトウェアパッケージは，[3条項BSDライセンス](LICENSE)の下，再頒布および使用が許可されます．
