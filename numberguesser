@@ -19,10 +19,8 @@ def number_guesser():
     charrenge = 0  
     
     while True:
-        # ユーザー入力を受け取る
         guess = input("guess: ")
         
-        # 入力が整数か確認
         if not guess.isdigit():
             print("input number")
             continue
