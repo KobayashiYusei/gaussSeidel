@@ -3,14 +3,15 @@ import random
 import colorsys
 def rainbow(text):
     steps = len(text)
-    prompt = ""
+    rainbow_txt = ""
     for i, char in enumerate(text):
         hue = i / steps 
-        rgb = tuple(int(c * 255) for c in colorsys.hsv_to_rgb(hue, 1, 1)) 
+        rgb = tuple(int(color * 255) for color in colorsys.hsv_to_rgb(hue, 1, 1)) 
         color_code = f"\033[38;2;{rgb[0]};{rgb[1]};{rgb[2]}m" 
-        prompt += f"{color_code}{char}"
-    prompt += "\033[0m "
-    return prompt
+        rainbow_text += f"{color_code}{char}"
+    rainbow_text += "\033[0m "
+    return rainbow_text
+
 def number_guesser():
     print("N   N U   U M   M BBBB  EEEE RRRR    GGG  U   U EEEE  SSS   SSS  EEEE RRRR\nNN  N U   U MM MM B   B E    R   R  G     U   U E    S     S     E    R   R\nN N N U   U M M M BBBB  EEE  RRRR   G  GG U   U EEE   SSS   SSS  EEE  RRRR\nN  NN U   U M   M B   B E    R R    G   G U   U E        S     S E    R R\nN   N  UUU  M   M BBBB  EEEE R  RR   GGG   UUU  EEEE SSSS  SSSS  EEEE R  RR")
     print("guess the secret number(1~100)")
@@ -35,5 +36,4 @@ def number_guesser():
             print(f"{rainbow("congraturations!")}🎉\nsecret number was {secret_number} ！")
             print(f"score: {charrenge}turn")
             break
-
 number_guesser()
