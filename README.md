@@ -16,9 +16,9 @@
 ## インストール
 コマンドラインで以下を実行します。
 ```bash
-git clone https://github.com/KobayashiYusei/numberGuesser.git
-cd numberGuesser
-chmod 755 numberguesser
+$ git clone https://github.com/KobayashiYusei/numberGuesser.git
+$ cd numberGuesser
+$ chmod 755 numberguesser
 ```
 
 ## 使い方
