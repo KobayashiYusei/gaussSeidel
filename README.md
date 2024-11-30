@@ -41,7 +41,7 @@ $ ./numberguesser
     - [pathlib](https://github.com/python/cpython/tree/3.13/Lib/pathlib/)
 
 ### 参考
-- [colorsys --- 色体系間の変換](https://docs.python.org/ja/3/library/colorsys.html)
+- [colorsys --- 色体系間の変換](https://docs.python.org/ja/3/library/colorsys.html) - *Python 3.13.0 ドキュメント*
 
 
 ## 貢献
