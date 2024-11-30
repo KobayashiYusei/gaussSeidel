@@ -46,6 +46,7 @@ $ ./numberguesser
 - [【python3】ファイルの存在を確認して、なかったら作る](https://note.com/yucco72/n/nbdc842d31cdd) - *yucco*
 - [python pathlibの使い方メモ](https://qiita.com/studio_haneya/items/11c9e825bd8068af7e87) - *haneya*
 - [Markdown記法 サンプル集](https://qiita.com/tbpgr/items/989c6badefff69377da7) - *てぃー びー*
+- [[5分でマスター]初心者はまずREADMEを書け[テンプレート付き]](https://qiita.com/Canard_engineer_c_cpp/items/81ce4e53881138dbf37f) - *Canard*
 
 ### 謝辞
 このプロジェクトの実装にあたり、以下の方々から提供された資料及びコードに多大な影響を受けました。ご支援ありがとうございます。
@@ -54,6 +55,7 @@ $ ./numberguesser
 - yuccoさん: ファイルの存在確認と作成に関するコードと使用方法を参考にさせていただきました。
 - haneyaさん: pathlibの使用方法をシンプルにまとめてくださった記事が非常に参考になりました。
 - てぃー びーさん: Markdown記法のサンプル集における実用的なコードがREADMEの作成において大変参考になりました。
+- Canardさん: READMEの書き方に関する詳細な記事が大変参考になりました。
 
 
 
