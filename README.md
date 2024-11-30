@@ -1,5 +1,8 @@
 # numberGuesser
 [![test](https://github.com/KobayashiYusei/numberGuesser/actions/workflows/test.yml/badge.svg)](https://github.com/KobayashiYusei/numberGuesser/actions/workflows/test.yml)
+[![GitHub License](https://img.shields.io/github/license/KobayashiYusei/numberGuesser)](LICENSE)
+<img src="https://img.shields.io/badge/ -Python-F9DC3E.svg?logo=python">
+
 ## 概要
 - 追加のライブラリインストールが不要で遊べる数字当てゲームです。
 - ハイスコア表示機能や答えの数との差に応じたアクションを搭載し、Linuxの文字色変更用のエスケープシーケンスを使用してゲームに装飾を施しました。
