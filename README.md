@@ -41,11 +41,11 @@ $ ./numberguesser
     - [pathlib](https://github.com/python/cpython/tree/3.13/Lib/pathlib/)
 
 ### 参考
--[ANSIエスケープシーケンス チートシート](https://qiita.com/PruneMazui/items/8a023347772620025ad6) - *Tanaka Kohei*
+- [ANSIエスケープシーケンス チートシート](https://qiita.com/PruneMazui/items/8a023347772620025ad6) - *Tanaka Kohei*
 - [colorsys --- 色体系間の変換](https://docs.python.org/ja/3/library/colorsys.html) - *Python 3.13.0 ドキュメント*
 - [【python3】ファイルの存在を確認して、なかったら作る](https://note.com/yucco72/n/nbdc842d31cdd) - *yucco*
--[python pathlibの使い方メモ](https://qiita.com/studio_haneya/items/11c9e825bd8068af7e87)- *haneya*
--[Markdown記法 サンプル集](https://qiita.com/tbpgr/items/989c6badefff69377da7)- *てぃー びー*
+- [python pathlibの使い方メモ](https://qiita.com/studio_haneya/items/11c9e825bd8068af7e87) - *haneya*
+- [Markdown記法 サンプル集](https://qiita.com/tbpgr/items/989c6badefff69377da7) - *てぃー びー*
 
 ## 貢献
 このプロジェクトへの貢献は大歓迎です 。 
