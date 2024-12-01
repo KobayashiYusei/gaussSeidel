@@ -23,12 +23,12 @@ $ chmod 755 gusdl
 
 ## 使い方
 以下を実行してゲームを起動します
-```
+```bash
 $ echo "[{方程式1の係数行列}]　[{方程式2の係数行列}]　[{方程式3の係数行列}]...  [{右辺の解行列}]" |./numberguesser
 ```
-- ゲームが起動し1~1000の中から適当な数字を標準入力によって入力していきます。
-- 数字の値が正解に近いと近さ度合いによって二段階の追加アクションがあります。
-- 正解すると数字が明らかになりハイスコアか否かが表示されます。
+- 連立方程式の係数行列を順番に入力していきます。
+- 最後に解の行列を入力して実行します。
+- ガウス＝ザイデル法によって収束しない方程式は解くことは出来ません。
 
 ### 実行例
 
@@ -38,11 +38,7 @@ $ echo "[{方程式1の係数行列}]　[{方程式2の係数行列}]　[{方程
 ## クレジット
 ### 使用ライブラリ
 - **Python標準ライブラリ**
-    - [random](https://github.com/python/cpython/blob/3.9/Lib/random.py) 
-    - [colorsys](https://github.com/python/cpython/blob/main/Lib/colorsys.py)
-    - [os](https://github.com/python/cpython/blob/main/Lib/os.py)
-    - [pathlib](https://github.com/python/cpython/tree/3.13/Lib/pathlib/)
-
+    - [sys](https://github.com/python/cpython/blob/3.9/Lib/random.py) 
 ### 参考
 - [ANSIエスケープシーケンス チートシート](https://qiita.com/PruneMazui/items/8a023347772620025ad6) - *Tanaka Kohei*
 - [colorsys --- 色体系間の変換](https://docs.python.org/ja/3/library/colorsys.html) - *Python 3.13.0 ドキュメント*
