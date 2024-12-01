@@ -40,7 +40,7 @@ $ echo '[4, -1, 0, 0] [-1, 4, -1, 0] [0, -1, 4, -1] [0, 0, -1, 3] [15, 10, 10, 1
 ## クレジット
 ### 使用ライブラリ
 - **Python標準ライブラリ**
-    - [sys](https://github.com/python/cpython/blob/3.9/Lib/random.py) 
+    - [sys](https://docs.python.org/ja/3/library/sys.html) 
 ### 参考
 - [ANSIエスケープシーケンス チートシート](https://qiita.com/PruneMazui/items/8a023347772620025ad6) - *Tanaka Kohei*
 - [colorsys --- 色体系間の変換](https://docs.python.org/ja/3/library/colorsys.html) - *Python 3.13.0 ドキュメント*
