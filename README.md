@@ -1,4 +1,4 @@
-# numberGuesser
+# gaussSeidel
 [![test](https://github.com/KobayashiYusei/numberGuesser/actions/workflows/test.yml/badge.svg)](https://github.com/KobayashiYusei/numberGuesser/actions/workflows/test.yml)
 [![GitHub License](https://img.shields.io/github/license/KobayashiYusei/numberGuesser)](LICENSE)
 <img src="https://img.shields.io/badge/ -Python-F9DC3E.svg?logo=python">
@@ -6,6 +6,7 @@
 ## 概要
 - ガウス＝ザイデル法によって連立方程式の解を求めるコマンドです。
 - 係数行列と右辺を入力することで多元連立方程式の解を求めることが出来ます。
+$$x^{k+1}_j = \frac{b_i - \sum_{j=1}^{i-1} a_{ij} x_j^{k+1} - \sum_{j=i+1}^n a_{ij} x^k_j}{a_{ii}}$$
 
 ## 対応環境
 - **OS**
@@ -35,8 +36,6 @@ $ echo '[4, -1, 0, 0] [-1, 4, -1, 0] [0, -1, 4, -1] [0, 0, -1, 3] [15, 10, 10, 1
 17 回で収束しました.
 解: [5.0, 5.0, 5.0, 5.0]
 ```
-
-ハイスコアはテキストファイルが自動的に生成されて保存されるため、次回のプレイにおいてもハイスコアが失われることはありません。
 ## クレジット
 ### 使用ライブラリ
 - **Python標準ライブラリ**
