@@ -1,0 +1,57 @@
+#!/usr/bin/python3
+import sys
+
+def gauss_seidel(A, b, threshold=1e-10, max_turn=1000, decimal_places=4):
+    n = len(A)
+    x_o = [0] * n
+    x_n = [0] * n
+    
+    for turn in range(max_turn):
+        for i in range(n):
+            sig = sum(A[i][j] * x_n[j] for j in range(n) if j != i)
+            x_n[i] = (b[i] - sig) / A[i][i]
+        
+        if all(abs(x_n[i] - x_o[i]) < threshold for i in range(n)):
+            return [round(x, decimal_places) for x in x_n], turn + 1
+        x_o = x_n.copy()
+    
+    raise ValueError("ガウスザイデル法によって解が収束することはありませんでした。")
+
+def main():
+    inputs = sys.stdin.read().strip()
+    parts = inputs.split(']')
+    if len(parts) < 2:
+        print("無効な入力です。[]で係数行列を囲って入力してください")
+        return   
+    
+    parts = [part + ']' for part in parts if part.strip()]
+    try:
+        A = [eval(part.strip()) for part in parts[:-1]]
+        b = eval(parts[-1].strip())
+        
+        if len(A) != len(A[0]):
+            print(f"係数行列が正方行列ではありません: {len(A)}, Columns: {len(A[0])}")
+            return
+        
+        if len(A) != len(b):
+            print(f"方程式の数が変数の数と一致しません.")
+            return
+
+    except (SyntaxError, ValueError) as e:
+        print(f"入力エラー: {e}")
+        return
+    #入力の確認の際はこちらのコメントアウトを解除してください
+    """
+    print(f"入力: {inputs}")
+    print(f"係数行列: {A}")
+    print(f":右辺行列 {b}")
+    """
+    try:
+        solution, turns = gauss_seidel(A, b)
+        print(f"{turns} 回で収束しました.")
+        print(f"解: {solution}")
+    except ValueError as e:
+        print(str(e))
+
+if __name__ == "__main__":
+    main()
