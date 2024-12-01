@@ -4,8 +4,8 @@
 <img src="https://img.shields.io/badge/ -Python-F9DC3E.svg?logo=python">
 
 ## 概要
-- 追加のライブラリインストールが不要で遊べる数字当てゲームです。
-- ハイスコア表示機能や答えの数との差に応じたアクションを搭載し、Linuxの文字色変更用のエスケープシーケンスを使用してゲームに装飾を施しました。
+- ガウス＝ザイデル法によって連立方程式の解を求めるコマンドです。
+- 係数行列と右辺を入力することで多元連立方程式の解を求めることが出来ます。
 
 ## 対応環境
 - **OS**
@@ -16,15 +16,15 @@
 ## インストール
 コマンドラインで以下を実行します。
 ```bash
-$ git clone https://github.com/KobayashiYusei/numberGuesser.git
-$ cd numberGuesser
-$ chmod 755 numberguesser
+$ git clone https://github.com/KobayashiYusei/gaussSeidel.git
+$ cd gaussSeidel
+$ chmod 755 gusdl
 ```
 
 ## 使い方
 以下を実行してゲームを起動します
 ```
-$ ./numberguesser
+$ echo "[{方程式1の係数行列}]　[{方程式2の係数行列}]　[{方程式3の係数行列}]...  [{右辺の解行列}]" |./numberguesser
 ```
 - ゲームが起動し1~1000の中から適当な数字を標準入力によって入力していきます。
 - 数字の値が正解に近いと近さ度合いによって二段階の追加アクションがあります。
