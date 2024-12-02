@@ -3,34 +3,27 @@
 # SPDX-License-Identifier: BSD-3-Clause
 # See LICENSE file for more details.
 
-SCORE_FILE="score.txt"
-
-if [ -f "$SCORE_FILE" ]; then
-  rm "$SCORE_FILE"
-fi
 ng (){
  echo "in line ${1} an Error occured."
  res=1
 }
 res=0
-out=$(seq 1000 | ./numberguesser)
+out=$(echo '[4, -1, 0, 0] [-1, 4, -1, 0] [0, -1, 4, -1] [0, 0, -1, 3] [15, 10, 10, 10]' | ./gusdl)
 [ "$?" = 0 ] || ng "$LINENO"
-echo "$out" | grep -q "Close!" || ng "$LINENO"
-echo "$out" | grep -q "Very Close!" || ng "$LINENO"
+echo "$out" | grep -q "収束しました" || ng "$LINENO"
+echo "$out" | grep -q "解" || ng "$LINENO"
 
-out=$(echo | ./numberguesser)
+out=$(echo '[1, 1] [-1, 1] [1, 0]' | ./gusdl)
 [ "$?" = 0 ] || ng "$LINENO"
-echo "$out" | grep -q "input number" || ng "$LINENO"
+echo "$out" | grep -q "ガウスザイデル法によって解が収束することはありませんでした。" || ng "$LINENO"
 
-out=$(echo "a" | ./numberguesser)
+out=$(echo | ./gusdl)
 [ "$?" = 0 ] || ng "$LINENO"
-echo "$out" | grep -q "input number" || ng "$LINENO"
+echo "$out" | grep -q "無効な入力です。" || ng "$LINENO"
 
-out=$(echo "-1" | ./numberguesser)
+out=$(echo "[4, -1, 0, 0] [-1, 4, -1, 0] [0, -1, 4, -1] [0, 0, -1, 3] [15, 10, 10]" | ./gusdl)
 [ "$?" = 0 ] || ng "$LINENO"
-echo "$out" | grep -q "input number" || ng "$LINENO"
-
-[ -f "$SCORE_FILE" ] || ng "$LINENO"
+echo "$out" | grep -q "方程式の数が変数の数と一致しません." || ng "$LINENO"
 
 [ "$res" = 0 ] && echo PASS
 exit $res
