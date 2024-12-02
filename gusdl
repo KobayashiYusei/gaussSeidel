@@ -4,7 +4,7 @@
 # See LICENSE file for more details.
 import sys
 
-def gauss_seidel(A, b, threshold=1e-10, max_turn=1000, decimal_places=4):
+def gauss_seidel(A, b, threshold=1e-10, max_turn=1000, d_p=4):
     n = len(A)
     x_o = [0] * n
     x_n = [0] * n
@@ -15,7 +15,7 @@ def gauss_seidel(A, b, threshold=1e-10, max_turn=1000, decimal_places=4):
             x_n[i] = (b[i] - sig) / A[i][i]
         
         if all(abs(x_n[i] - x_o[i]) < threshold for i in range(n)):
-            return [round(x, decimal_places) for x in x_n], turn + 1
+            return [round(x, d_p) for x in x_n], turn + 1
         x_o = x_n.copy()
     
     raise ValueError("ガウスザイデル法によって解が収束することはありませんでした。")
